@@ -11,6 +11,8 @@ elseif($page=="user")
 	include ("modul/user.php");
 elseif($page=="add") 
 	include ("modul/add.php");
+	elseif($page=="edit") 
+	include ("modul/edit.php");
 elseif($page=="barang") 
 	include ("pages/barang/barang.php");
 
