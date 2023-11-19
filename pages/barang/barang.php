@@ -2,12 +2,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DATA USERNAME</h1>
+            <h1>DATA BARANG</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data User</li>
+              <li class="breadcrumb-item active">Data Barang</li>
             </ol>
           </div>
         </div>
@@ -30,10 +30,9 @@
                   <thead>
                   <tr>
                     <th>No</th>
-                    <th>Username</th>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>No Handphone</th>
+                    <th>nama_barang</th>
+                    <th>stock_barang</th>
+                    <th>satuan</th>
                     <th>Is Active</th>
                     <th>Action</th>
                   </tr>
@@ -42,7 +41,7 @@
                       <?php
                       include 'config/connection.php';
                       $no = 1;
-                      $data = mysqli_query($koneksi,"select id_barang, nama_barang, stock_barang, satuan, is_active from user where is_active=1");
+                      $data = mysqli_query($koneksi,"select id_barang, nama_barang, stock_barang, satuan, is_active from tb_barang where is_active=1");
                       while($d = mysqli_fetch_array($data)){
                       ?>
                               
@@ -64,10 +63,9 @@
                   <tfoot>
                   <tr>
                     <th>No</th>
-                    <th>Username</th>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>No Handphone</th>
+                    <th>nama_barang</th>
+                    <th>stock_barang</th>
+                    <th>satuan</th>
                     <th>Is Active</th>
                     <th>Action</th>
                   </tr>
