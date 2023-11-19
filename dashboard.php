@@ -87,6 +87,12 @@
                                     <p>Master Barang</p>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="?page=stock" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Master Stock</p>
+                                    </a>
+                                </li>
                             </ul>
 
                         </li>
