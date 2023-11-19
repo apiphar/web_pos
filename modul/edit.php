@@ -56,7 +56,8 @@
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
-                  <a href="?page=dashboard"><button class="btn btn-danger">Cancel</button></a>
+                  <a href="?page=dashboard"><button type="cancel" name="submitted" class="btn btn-danger" value="cancel">Cancel</button></a>
+                              
                 </div>
               </form>
 
