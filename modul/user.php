@@ -53,8 +53,8 @@
                           <td><?php echo $d['email']; ?></td>
                           <td><?php echo $d['no_telp']; ?></td>
                           <td><?php echo $d['is_active']; ?></td>
-                          <td>
-                            <a href="edit.php?id=<?php echo $d['user_id']; ?>">EDIT</a>
+                          <td>                            
+                            <a href="?page=edit&id=<?php echo $d['user_id']; ?>">EDIT</a>
                             <a href="delete.php?id=<?php echo $d['user_id']; ?>">HAPUS</a>
                           </td>
                         </tr>
@@ -84,4 +84,4 @@
         <!-- /.row -->
       </div>
       <!-- /.container-fluid -->
-    </section>
+</section>
