@@ -22,26 +22,28 @@
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Quick Example <small>jQuery Validation</small></h3>
+                <h3 class="card-title">Add User</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form id="quickForm">
+              <form action="modul/save.php" method="post" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" name="username" class="form-control" id="exampleInputEmail1" placeholder="Username">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group mb-0">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1">
-                      <label class="custom-control-label" for="exampleCheck1">I agree to the <a href="#">terms of service</a>.</label>
-                    </div>
-                  </div>
+                    <label for="exampleInputPassword1">Nama</label>
+                    <input type="text" name="nama" class="form-control" id="exampleInputPassword1" placeholder="Nama">
+                  </div>     
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="text" name="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                  </div>   
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">No HP</label>
+                    <input type="text" name="no_telp" class="form-control" id="exampleInputPassword1" placeholder="No HP">
+                  </div>          
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
