@@ -25,6 +25,8 @@ elseif($page=="login")
 	include ("modul/login.php");
 elseif($page=="loginproses") 
 	include ("modul/loginproses.php");
+elseif($page=="barang") 
+	include ("pages/barang/barang.php");
 
 
 ?>
