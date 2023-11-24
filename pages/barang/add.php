@@ -2,11 +2,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DATA USER</h1>
+            <h1>DATA BARANG</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Data User</a></li>
+              <li class="breadcrumb-item"><a href="#">Data Barang</a></li>
               <li class="breadcrumb-item active">Add</li>
             </ol>
           </div>
@@ -22,26 +22,24 @@
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Quick Example <small>jQuery Validation</small></h3>
+                <h3 class="card-title">Add User</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form id="quickForm">
+              <form action="modul/save.php" method="post" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <label for="exampleInputEmail1">nama_barang</label>
+                    <input type="text" name="nama_barang" class="form-control" id="exampleInputEmail1" placeholder="Nnama_barang">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group mb-0">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1">
-                      <label class="custom-control-label" for="exampleCheck1">I agree to the <a href="#">terms of service</a>.</label>
-                    </div>
-                  </div>
+                    <label for="exampleInputPassword1">stock_barang</label>
+                    <input type="text" name="stock_barang" class="form-control" id="exampleInputPassword1" placeholder="stock_barang">
+                  </div>     
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">satuan</label>
+                    <input type="text" name="satuan" class="form-control" id="exampleInputPassword1" placeholder="satuan">
+                  </div>   
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
