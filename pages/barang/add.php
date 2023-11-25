@@ -22,15 +22,15 @@
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Add User</h3>
+                <h3 class="card-title">Add Barang</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="modul/save.php" method="post" id="quickForm">
+              <form action="pages/save.php" method="post" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">nama_barang</label>
-                    <input type="text" name="nama_barang" class="form-control" id="exampleInputEmail1" placeholder="Nnama_barang">
+                    <input type="text" name="nama_barang" class="form-control" id="exampleInputEmail1" placeholder="nama_barang">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">stock_barang</label>
