@@ -30,8 +30,8 @@
                   <thead>
                   <tr>
                     <th>No</th>
-                    <th>nama_barang</th>
-                    <th>stock_barang</th>
+                    <th>nama barang</th>
+                    <th>stock barang</th>
                     <th>satuan</th>
                     <th>Is Active</th>
                     <th>Action</th>
@@ -63,8 +63,8 @@
                   <tfoot>
                   <tr>
                     <th>No</th>
-                    <th>nama_barang</th>
-                    <th>stock_barang</th>
+                    <th>nama barang</th>
+                    <th>stock barang</th>
                     <th>satuan</th>
                     <th>Is Active</th>
                     <th>Action</th>

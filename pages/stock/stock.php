@@ -30,7 +30,7 @@
                   <thead>
                   <tr>
                     <th>No</th>
-                    <th>jml_stock</th>
+                    <th>jumlah stock</th>
                     <th>satuan</th>
                     <th>Action</th>
                   </tr>
