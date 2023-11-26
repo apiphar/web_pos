@@ -29,16 +29,16 @@
               <form action="pages/barang/save.php" method="post" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">nama_barang</label>
-                    <input type="text" name="nama_barang" class="form-control" id="exampleInputEmail1" placeholder="nama_barang">
+                    <label for="exampleInputEmail1">Nama Barang</label>
+                    <input type="text" name="Nama Barang" class="form-control" id="exampleInputEmail1" placeholder="Nama Barang">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">stock_barang</label>
-                    <input type="text" name="stock_barang" class="form-control" id="exampleInputPassword1" placeholder="stock_barang">
+                    <label for="exampleInputPassword1">Stok Barang</label>
+                    <input type="text" name="Stok Barang" class="form-control" id="exampleInputPassword1" placeholder="Stok Barang">
                   </div>     
                   <div class="form-group">
-                    <label for="exampleInputPassword1">satuan</label>
-                    <input type="text" name="satuan" class="form-control" id="exampleInputPassword1" placeholder="satuan">
+                    <label for="exampleInputPassword1">Satuan</label>
+                    <input type="text" name="Satuan" class="form-control" id="exampleInputPassword1" placeholder="Satuan">
                   </div>   
                 </div>
                 <!-- /.card-body -->
