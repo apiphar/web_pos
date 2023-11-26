@@ -11,7 +11,11 @@ elseif($page=="user")
 	include ("modul/user.php");
 elseif($page=="add") 
 	include ("modul/add.php");
-	elseif($page=="edit") 
+elseif($page=="add_barang")
+	include ("pages/barang/add.php");
+elseif($page=="add_stock")
+	include ("pages/stock/add.php");
+elseif($page=="edit") 
 	include ("modul/edit.php");
 elseif($page=="barang") 
 	include ("pages/barang/barang.php");

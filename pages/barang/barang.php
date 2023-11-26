@@ -20,7 +20,7 @@
           <div class="col-12">            
             <div class="card">
               <div class="card-header">                
-              <a href="?page=add">
+              <a href="?page=add_barang">
                 <button type="button" class="btn btn-primary">ADD NEW DATA</button>
               </a> 
               </div>
