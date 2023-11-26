@@ -55,7 +55,7 @@
                           <td><?php echo $d['is_active']; ?></td>
                           <td>                            
                             <a href="?page=edit&id=<?php echo $d['user_id']; ?>">EDIT</a>
-                            <a href="delete.php?id=<?php echo $d['user_id']; ?>">HAPUS</a>
+                            <a href="?page=delete&id=<?php echo $d['user_id']; ?>">HAPUS</a>
                           </td>
                         </tr>
                       <?php

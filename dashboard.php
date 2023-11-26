@@ -1,4 +1,9 @@
 
+<?php
+    $pageName = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'],"/") + 1);    
+
+?>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,7 +70,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item menu-open">
                             <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-book"></i>
                             <p>
@@ -76,7 +81,9 @@
 
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="?page=user" class="nav-link">
+                                    <a href="?page=user" class="nav-link
+                                        <?= $pageName == 'user.php' ? 'active':''; ?>
+                                    ">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Master User</p>
                                     </a>
@@ -101,6 +108,7 @@
             </div>          
         </aside>  
         
+    
         <div class="content-wrapper">
             <?php include("modul.php"); ?>
         </div>

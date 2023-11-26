@@ -33,11 +33,11 @@
                     
                 ?>
 
-              <form action="modul/save.php" method="post" id="quickForm">
+              <form action="modul/update.php" method="post" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Username</label>
-                    <input type="hidden" name="username" class="form-control" id="exampleInputEmail1" placeholder="Username" value="<?php echo $d['user_id']; ?>">
+                    <input type="hidden" name="userid" class="form-control" id="exampleInputEmail1" placeholder="Username" value="<?php echo $d['user_id']; ?>">
                     <input type="text" name="username" class="form-control" id="exampleInputEmail1" placeholder="Username" value="<?php echo $d['user_name']; ?>">
                   </div>
                   <div class="form-group">

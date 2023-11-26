@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 if(isset($_GET['page'])) $page =  $_GET['page'];
 else $page = "home";
 ?>
@@ -17,6 +17,8 @@ elseif($page=="add_stock")
 	include ("pages/stock/add.php");
 elseif($page=="edit") 
 	include ("modul/edit.php");
+	elseif($page=="delete") 
+	include ("modul/delete.php");
 elseif($page=="barang") 
 	include ("pages/barang/barang.php");
 elseif($page=="stock") 
