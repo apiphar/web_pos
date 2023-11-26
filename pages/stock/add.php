@@ -29,12 +29,12 @@
               <form action="pages/stock/save.php" method="post" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">jml_stock</label>
-                    <input type="text" name="jml_stock" class="form-control" id="exampleInputEmail1" placeholder="jml_stock">
+                    <label for="exampleInputEmail1">Jumlah Stok</label>
+                    <input type="text" name="Jumlah Stock" class="form-control" id="exampleInputEmail1" placeholder="Jumlah Stok">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">satuan</label>
-                    <input type="text" name="satuan" class="form-control" id="exampleInputPassword1" placeholder="satuan">
+                    <label for="exampleInputPassword1">Satuan</label>
+                    <input type="text" name="Satuan" class="form-control" id="exampleInputPassword1" placeholder="Satuan">
                   </div>   
                 </div>
                 <!-- /.card-body -->

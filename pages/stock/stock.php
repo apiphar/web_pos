@@ -30,8 +30,8 @@
                   <thead>
                   <tr>
                     <th>No</th>
-                    <th>jumlah stock</th>
-                    <th>satuan</th>
+                    <th>Jumlah Stok</th>
+                    <th>Satuan</th>
                     <th>Action</th>
                   </tr>
                   </thead>
@@ -59,8 +59,8 @@
                   <tfoot>
                   <tr>
                     <th>No</th>
-                    <th>jml_stock</th>
-                    <th>satuan</th>
+                    <th>Jumlah Stok</th>
+                    <th>Satuan</th>
                     <th>Action</th>
                   </tr>
                   </tfoot>
