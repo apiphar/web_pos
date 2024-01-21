@@ -12,6 +12,6 @@ if ($koneksi -> connect_errno) {
     echo("Error description: " . $koneksi -> error);
   }
 
-  header("location:../../dashboard.php?page=barang");
+  //header("location:../../dashboard.php?page=barang");
 
   ?>
