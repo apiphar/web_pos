@@ -7,7 +7,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Data Barang</a></li>
-              <li class="breadcrumb-item active">Add</li>
+              <li class="breadcrumb-item active">Edit</li>
             </ol>
           </div>
         </div>
@@ -22,27 +22,40 @@
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Add Barang</h3>
+                <h3 class="card-title">Edit Barang</h3>
               </div>
-              <!-- /.card-header -->
-              <!-- form start -->
-              <form action="pages/barang/save.php" method="post" id="quickForm">
+
+                <?php
+                    include 'config/connection.php';
+                    $id = $_GET['id'];
+                    $data = mysqli_query($koneksi,"select id_barang,nama_barang,stock_barang, satuan, is_active from tb_barang where id_barang='$id'");
+                    while($d = mysqli_fetch_array($data)){
+                    
+                ?>
+
+              <form action="pages/barang/update.php" method="post" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nama Barang</label>
-                    <input type="text" name="Nama Barang" class="form-control" id="exampleInputEmail1" placeholder="Nama Barang">
+                    <input type="hidden" name="idbarang" class="form-control" id="exampleInputEmail1" placeholder="Nama Barang" value="<?php echo $d['id_barang']; ?>">
+                    <input type="text" name="nama_barang" class="form-control" id="exampleInputEmail1" placeholder="Nama Barang" value="<?php echo $d['nama_barang']; ?>">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Satuan</label>
-                    <input type="text" name="Satuan" class="form-control" id="exampleInputPassword1" placeholder="Satuan">
+                    <input type="text" name="satuan" class="form-control" id="exampleInputPassword1" placeholder="Satuan" value="<?php echo $d['satuan']; ?>">
                   </div>   
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
-                  <a href="?page=dashboard"><button class="btn btn-danger">Cancel</button></a>
+                  <a href="?page=dashboard"><button type="cancel" name="submitted" class="btn btn-danger" value="cancel">Cancel</button></a>
+                              
                 </div>
               </form>
+
+                <?php
+                    }
+                ?>
             </div>
             <!-- /.card -->
             </div>

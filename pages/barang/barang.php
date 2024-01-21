@@ -31,7 +31,6 @@
                   <tr>
                     <th>No</th>
                     <th>Nama Barang</th>
-                    <th>Stok Barang</th>
                     <th>Satuan</th>
                     <th>Is Active</th>
                     <th>Action</th>
@@ -41,19 +40,18 @@
                       <?php
                       include 'config/connection.php';
                       $no = 1;
-                      $data = mysqli_query($koneksi,"select id_barang, nama_barang, stock_barang, satuan, is_active from tb_barang where is_active=1");
+                      $data = mysqli_query($koneksi,"select id_barang, nama_barang, satuan, is_active from tb_barang where is_active=1");
                       while($d = mysqli_fetch_array($data)){
                       ?>
                               
                         <tr>
                           <td><?php echo $no++; ?></td>
                           <td><?php echo $d['nama_barang']; ?></td>
-                          <td><?php echo $d['stock_barang']; ?></td>
                           <td><?php echo $d['satuan']; ?></td>
                           <td><?php echo $d['is_active']; ?></td>
                           <td>
-                            <a href="edit.php?id=<?php echo $d['id_barang']; ?>">EDIT</a>
-                            <a href="delete.php?id=<?php echo $d['id_barang']; ?>">HAPUS</a>
+                            <a href="?page=edit_barang&id=<?php echo $d['id_barang']; ?>">EDIT</a>
+                            <a href="?page=delete_barang&id=<?php echo $d['id_barang']; ?>">HAPUS</a>
                           </td>
                         </tr>
                       <?php
@@ -64,7 +62,6 @@
                   <tr>
                     <th>No</th>
                     <th>Nama Barang</th>
-                    <th>Stok Barang</th>
                     <th>Satuan</th>
                     <th>Is Active</th>
                     <th>Action</th>

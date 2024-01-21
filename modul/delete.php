@@ -9,7 +9,7 @@ if ($koneksi -> connect_errno) {
     exit();
   }
 
-  if (!$koneksi -> query("UPDATE User set is_active = 0 WHERE user_id='$user_id'")) {
+  if (!$koneksi -> query("UPADTE User set is_active = 0 WHERE user_id='$user_id'")) {
     echo("Error description: " . $koneksi -> error);
   }
 
