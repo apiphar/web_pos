@@ -31,7 +31,7 @@
                   <tr>
                     <th>No</th>
                     <th>Nama Barang</th>
-                    <th>Stok Barang</th>
+                    
                     <th>Satuan</th>
                     <th>Is Active</th>
                     <th>Action</th>
@@ -41,14 +41,14 @@
                       <?php
                       include 'config/connection.php';
                       $no = 1;
-                      $data = mysqli_query($koneksi,"select id_barang, nama_barang, stock_barang, satuan, is_active from tb_barang where is_active=1");
+                      $data = mysqli_query($koneksi,"select id_barang, nama_barang, satuan, is_active from tb_barang where is_active=1");
                       while($d = mysqli_fetch_array($data)){
                       ?>
                               
                         <tr>
                           <td><?php echo $no++; ?></td>
                           <td><?php echo $d['nama_barang']; ?></td>
-                          <td><?php echo $d['stock_barang']; ?></td>
+                      
                           <td><?php echo $d['satuan']; ?></td>
                           <td><?php echo $d['is_active']; ?></td>
                           <td>
@@ -63,8 +63,7 @@
                   <tfoot>
                   <tr>
                     <th>No</th>
-                    <th>Nama Barang</th>
-                    <th>Stok Barang</th>
+                    <th>Nama Barang</th>           
                     <th>Satuan</th>
                     <th>Is Active</th>
                     <th>Action</th>
