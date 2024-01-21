@@ -30,23 +30,22 @@
                   <thead>
                   <tr>
                     <th>No</th>
+                    <th>Nama Barang</th>
                     <th>Jumlah Stok</th>
-                    <th>Satuan</th>
-                    <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
                       <?php
                       include 'config/connection.php';
                       $no = 1;
-                      $data = mysqli_query($koneksi,"select id_stock, jml_stock, satuan from tb_stock");
+                      $data = mysqli_query($koneksi,"select nama_barang from tb_barang a INNER JOIN tb_stock_new b ON a.id_barang = b.id_barang");
                       while($d = mysqli_fetch_array($data)){
                       ?>
                               
                         <tr>
                           <td><?php echo $no++; ?></td>
+                          <td><?php echo $d['nama_barang']; ?></td>
                           <td><?php echo $d['jml_stock']; ?></td>
-                          <td><?php echo $d['satuan']; ?></td>
                           <td>
                             <a href="edit.php?id=<?php echo $d['id_stock']; ?>">EDIT</a>
                             <a href="delete.php?id=<?php echo $d['id_stock']; ?>">HAPUS</a>
@@ -59,9 +58,8 @@
                   <tfoot>
                   <tr>
                     <th>No</th>
+                    <th>Nama Barang</th>
                     <th>Jumlah Stok</th>
-                    <th>Satuan</th>
-                    <th>Action</th>
                   </tr>
                   </tfoot>
                 </table>

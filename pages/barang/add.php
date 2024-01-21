@@ -30,11 +30,11 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nama Barang</label>
-                    <input type="text" name="Nama Barang" class="form-control" id="exampleInputEmail1" placeholder="Nama Barang">
+                    <input type="text" name="nama_barang" class="form-control" id="nama_barang" placeholder="Nama Barang">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Satuan</label>
-                    <input type="text" name="Satuan" class="form-control" id="exampleInputPassword1" placeholder="Satuan">
+                    <input type="text" name="satuan" class="form-control" id="satuan" placeholder="Satuan">
                   </div>   
                 </div>
                 <!-- /.card-body -->

@@ -28,7 +28,7 @@
                 <?php
                     include 'config/connection.php';
                     $id = $_GET['id'];
-                    $data = mysqli_query($koneksi,"select id_barang,nama_barang,stock_barang, satuan, is_active from tb_barang where id_barang='$id'");
+                    $data = mysqli_query($koneksi,"select id_barang,nama_barang,satuan, is_active from tb_barang where id_barang='$id'");
                     while($d = mysqli_fetch_array($data)){
                     
                 ?>
@@ -36,13 +36,13 @@
               <form action="pages/barang/update.php" method="post" id="quickForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nama Barang</label>
-                    <input type="hidden" name="idbarang" class="form-control" id="exampleInputEmail1" placeholder="Nama Barang" value="<?php echo $d['id_barang']; ?>">
-                    <input type="text" name="nama_barang" class="form-control" id="exampleInputEmail1" placeholder="Nama Barang" value="<?php echo $d['nama_barang']; ?>">
+                    <label for="nama_barang">Nama Barang</label>
+                    <input type="hidden" name="idbarang" class="form-control" id="nama_barang" placeholder="Nama Barang" value="<?php echo $d['id_barang']; ?>">
+                    <input type="text" name="nama_barang" class="form-control" id="nama_barang" placeholder="Nama Barang" value="<?php echo $d['nama_barang']; ?>">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Satuan</label>
-                    <input type="text" name="satuan" class="form-control" id="exampleInputPassword1" placeholder="Satuan" value="<?php echo $d['satuan']; ?>">
+                    <label for="satuan">Satuan</label>
+                    <input type="text" name="satuan" class="form-control" id="satuan" placeholder="Satuan" value="<?php echo $d['satuan']; ?>">
                   </div>   
                 </div>
                 <!-- /.card-body -->

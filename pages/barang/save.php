@@ -8,10 +8,10 @@ if ($koneksi -> connect_errno) {
     exit();
   }
 
-  if (!$koneksi -> query("INSERT INTO tb_barang (nama_barang,satuan,is_active) VALUES('$nama_barang',$satuan',1)")) {
+  if (!$koneksi -> query("INSERT INTO tb_barang (nama_barang,satuan,is_active) VALUES('$nama_barang','$satuan',1)")) {
     echo("Error description: " . $koneksi -> error);
   }
 
-  //header("location:../../dashboard.php?page=barang");
+  header("location:../../dashboard.php?page=barang");
 
   ?>
