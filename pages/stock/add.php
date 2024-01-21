@@ -28,14 +28,25 @@
               <!-- form start -->
               <form action="pages/stock/save.php" method="post" id="quickForm">
                 <div class="card-body">
+                <div class="form-group">
+                  <label for="exampleSelectBorder">Nama Barang</label>
+                  <select class="custom-select form-control-border" id="exampleSelectBorder">
+                    <?php
+                      include 'config/connection.php';
+                      $no = 1;
+                      $data = mysqli_query($koneksi,"select id_barang, nama_barang from tb_barang where is_active=1");
+                      while($d = mysqli_fetch_array($data)){
+                    ?>
+                      <option value="<?=$d['id_barang']?>"><?=  $d['nama_barang']?></option> 
+                    <?php
+                      }
+                    ?>                 
+                  </select>
+                  </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Jumlah Stok</label>
                     <input type="text" name="Jumlah Stock" class="form-control" id="exampleInputEmail1" placeholder="Jumlah Stok">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Satuan</label>
-                    <input type="text" name="Satuan" class="form-control" id="exampleInputPassword1" placeholder="Satuan">
-                  </div>   
+                  </div>             
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
