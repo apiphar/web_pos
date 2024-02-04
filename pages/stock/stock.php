@@ -38,7 +38,7 @@
                       <?php
                       include 'config/connection.php';
                       $no = 1;
-                      $data = mysqli_query($koneksi,"select nama_barang, jml_stock from tb_barang a INNER JOIN tb_stock_new b ON a.id_barang = b.id_barang");
+                      $data = mysqli_query($koneksi,"select a.id_barang, nama_barang, jml_stock from tb_barang a INNER JOIN tb_stock_new b ON a.id_barang = b.id_barang");
                       while($d = mysqli_fetch_array($data)){
                       ?>
                               
