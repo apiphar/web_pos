@@ -38,7 +38,7 @@
                       <?php
                       include 'config/connection.php';
                       $no = 1;
-                      $data = mysqli_query($koneksi,"select nama_barang from tb_barang a INNER JOIN tb_stock_new b ON a.id_barang = b.id_barang");
+                      $data = mysqli_query($koneksi,"select nama_barang, jml_stock from tb_barang a INNER JOIN tb_stock_new b ON a.id_barang = b.id_barang");
                       while($d = mysqli_fetch_array($data)){
                       ?>
                               
@@ -47,8 +47,8 @@
                           <td><?php echo $d['nama_barang']; ?></td>
                           <td><?php echo $d['jml_stock']; ?></td>
                           <td>
-                            <a href="edit.php?id=<?php echo $d['id_stock']; ?>">EDIT</a>
-                            <a href="delete.php?id=<?php echo $d['id_stock']; ?>">HAPUS</a>
+                            <a href="edit.php?id=<?php echo $d['id_barang']; ?>">EDIT</a>
+                            <a href="delete.php?id=<?php echo $d['id_barang']; ?>">HAPUS</a>
                           </td>
                         </tr>
                       <?php

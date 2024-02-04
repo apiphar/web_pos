@@ -30,7 +30,7 @@
                 <div class="card-body">
                 <div class="form-group">
                   <label for="exampleSelectBorder">Nama Barang</label>
-                  <select class="custom-select form-control-border" id="exampleSelectBorder">
+                  <select class="custom-select form-control-border" name="id_barang" id="exampleSelectBorder">
                     <?php
                       include 'config/connection.php';
                       $no = 1;
@@ -44,12 +44,8 @@
                   </select>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Nama Barang</label>
-                    <input type="text" name="Nama Barang" class="form-control" id="exampleInputEmail1" placeholder="Nama Barang">
-                  </div>
-                  <div class="form-group">
                     <label for="exampleInputPassword1">Jumlah Stock</label>
-                    <input type="text" name="Jumlah Stock" class="form-control" id="exampleInputPassword1" placeholder="Jumlah Stock">
+                    <input type="text" name="jml_stock" class="form-control" id="exampleInputPassword1" placeholder="Jumlah Stock">
                   </div>   
                 </div>
                 <!-- /.card-body -->

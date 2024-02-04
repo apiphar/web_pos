@@ -28,7 +28,7 @@
                 <?php
                     include 'config/connection.php';
                     $id = $_GET['id'];
-                    $data = mysqli_query($koneksi,"select id_stock, jml_stock, satuan from tb_stock where id_stock='$id'");
+                    $data = mysqli_query($koneksi,"select id_barang, jml_stock from tb_stock_new where id_barang='$id'");
                     while($d = mysqli_fetch_array($data)){
                     
                 ?>
